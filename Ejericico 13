@@ -1,0 +1,29 @@
+Algoritmo Menú
+	Repetir
+		Definir opcionElegir Como Entero
+		i <- 1
+		Escribir "Ingrese la opción que desee"
+		Escribir "1. Suma"
+		Escribir "2. División"
+		Escribir "3. Salir"
+		Si opcionElegir == 1 Entonces
+			Escribir "Ingrese primer número"
+			Leer num1
+			Escribir "Ingrese segundo número"
+			Leer num2
+			Suma <- num1 + num2
+			Escribir "La suma de los dos números es:", Suma
+		SiNo
+			Si opcionElegir == 2 Entonces
+				Escribir "Ingrese numerador"
+				Leer num1
+				Escribir "Ingrese denominador"
+				Leer num2
+				Si num2 <> 0 Entonces
+					División <- num1/num2
+					Escribir "La división entre los números es:", División
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que opcionElegir = 3
+FinAlgoritmo
